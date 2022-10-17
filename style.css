@@ -1,0 +1,191 @@
+body{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    width: 100vw;
+    height: 100vh;  
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    background-color: hsl(223, 19%, 93%)  
+}
+
+
+.likes img{
+    cursor: pointer;
+    padding: 20px;
+}
+
+.container{
+   
+    display:flex ;
+    flex-direction: column;
+    
+    align-items: center;
+    height: 80%;
+    width: 60%;
+    background-color: hsl(228, 33%, 97%);   
+}
+.list_of_replies{
+
+    height: 90%;
+    overflow: scroll;
+}
+.message{
+    list-style-type: none;
+    width: 80%;
+    margin-left:5% ;
+    margin-bottom: 2%;
+      
+}
+.reply_message{
+    width: 70%;
+    margin-left:15% ;
+}
+.message_container{
+  
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: hsl(0, 0%, 100%);
+    padding: 15px;
+    width: 100%;
+}
+
+.message_container .likes{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-right: 5%;
+    margin-left: 2%;
+    height: 80%;
+    padding: 20px 5px;
+    width: 40px;
+    background-color: hsl(223, 19%, 93%);
+}
+
+.message_container .likes button{
+ padding: 10px;
+ border: none;   
+}
+.message_body{
+    width: 90%;
+    height: 90%;
+}
+.message_navbar{
+   
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.message_navbar_left{
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.message_navbar_left img{
+    width: 50px;
+    height: 50px;
+}
+
+.name{
+    font-size: 16px;
+    font-weight: 700;
+    font-style: "Rubik";
+}
+.time{
+    color: hsl(211, 10%, 45%);
+    font-size: 16px;
+    font-weight: 700;
+    white-space: pre;
+}
+.userMessage{
+    display: flex;
+    flex-direction: row;
+    width: 20%;
+    justify-content: space-around;
+
+}
+
+/* styling for message sender*/
+.add_comment{
+    width: 80%;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+
+    padding: 10px;
+    background-color:hsl(0, 0%, 100%) ;
+}
+
+.add_comment_reply{
+    border: 2px solid red;
+    width: 90%;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+    margin: 10px;
+    padding: 10px;
+    background-color:hsl(0, 0%, 100%);
+    border: none;
+    
+}
+
+.none{
+    display: none;
+}
+.add_comment img, .add_comment_reply img{
+    width: 50px;
+    height: 50px;
+}
+.add_comment input[type=text],.add_comment_reply input[type=text]{
+    width: 80%;
+    border: 1px solid  hsl(211, 10%, 45%);
+    margin: 0px 10px;
+    font-size: 16px;
+    padding: 10px;
+    padding-bottom: 6%;
+    
+   
+}
+.cancel{
+    background-color: hsl(11, 78%, 47%);
+    text-align: center;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 5px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    color: hsl(0, 0%, 100%);
+    
+}
+.add_comment button, .add_comment_reply .send{
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(238, 40%, 52%);
+    text-align: center;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+}
+
+
+.like,.dislike, .message_navbar_right{
+    cursor: pointer;
+}
